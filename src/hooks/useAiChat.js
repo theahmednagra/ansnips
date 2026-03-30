@@ -1,7 +1,8 @@
 import { useState, useCallback, useRef } from 'react';
+import config from '../config/config';
 
 // Groq API Configuration
-const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY;
+const GROQ_API_KEY = config.groqApiKey;
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 const RATE_LIMIT = {

@@ -5,6 +5,7 @@ import authService from '../../appwrite/authService';
 import userInfoService from '../../appwrite/userInfoService';
 import { login } from '../../store/authSlice';
 import Loader from '../components/Loader';
+import Toast from '../components/Toast';
 
 /**
  * AuthSuccess Component
@@ -33,7 +34,7 @@ const AuthSuccess = () => {
             if (userInfoError) {
                 // User info doesn't exist, create it
                 // This happens on first-time Google login
-                
+
                 // Generate a unique username
                 let newUsername;
                 let unique = false;
@@ -85,7 +86,7 @@ const AuthSuccess = () => {
             // Redirect to login after error
             setTimeout(() => {
                 navigate('/auth');
-            }, 2000);
+            }, 2500);
         }
     };
 
@@ -94,7 +95,7 @@ const AuthSuccess = () => {
             <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-zinc-950">
                 <div className="text-center">
                     <div className="text-red-500 text-lg mb-4">
-                        Authentication failed: {error}
+                        We couldn't connect to your Google account. Please try signing in with your credentials instead.
                     </div>
                     <p className="text-gray-600 dark:text-gray-400">
                         Redirecting to login...

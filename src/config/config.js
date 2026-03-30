@@ -18,8 +18,7 @@ let config = {
     appwriteCommentLikesCollectionId: String(import.meta.env.VITE_APPWRITE_COMMENT_LIKES_COLLECTION_ID),
     appwriteReelsCollectionId: String(import.meta.env.VITE_APPWRITE_REELS_COLLECTION_ID),
 
-    geminiApiKey: String(import.meta.env.VITE_GEMINI_API_KEY),
-    geminiApiEndpoint: String(import.meta.env.VITE_GEMINI_API_ENDPOINT),
+    groqApiKey: String(import.meta.env.VITE_GROQ_API_KEY),
 
     cloudinaryCloudName: String(import.meta.env.VITE_CLOUDINARY_CLOUD_NAME),
     cloudinaryUploadPreset: String(import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET),

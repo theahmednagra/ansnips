@@ -10,7 +10,7 @@ const Loader = () => {
         transition={{ duration: 0.2 }}
         className='flex flex-col items-center'
       >
-        <Loader2 className='w-7 h-7 text-blue-600 dark:text-blue-500 animate-spin' />
+        <Loader2 className='w-10 h-10 text-blue-600 dark:text-blue-500 animate-spin' />
         <span className='mt-4 text-sm text-gray-600 dark:text-gray-400'>
           Loading...
         </span>

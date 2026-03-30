@@ -311,16 +311,15 @@ const AllPosts = () => {
 
                 {/* Posts Header */}
                 <div className='flex justify-between items-center mb-6'>
-                    <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
                         {isOwnProfile ? 'Your Posts' : 'Posts'}
                     </h2>
 
                     {isOwnProfile && (
                         <button
                             onClick={() => navigate("/postform")}
-                            className="flex items-center gap-1 px-3 py-2 text-xs font-semibold bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
+                            className="px-5 py-2 text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
                         >
-                            <FilePlus size={15} />
                             New Post
                         </button>
                     )}
