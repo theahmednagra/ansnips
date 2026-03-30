@@ -230,6 +230,7 @@ const PostCard = ({ post, index, userDetails, showAuthor = true, onUnsave, autop
                                 title={post.title || post.caption}
                                 content={post.content || post.caption}
                                 whiteIcons={!!post.videoUrl}
+                                isReel={post.videoUrl}
                             />
                         </div>
                         <SaveButton

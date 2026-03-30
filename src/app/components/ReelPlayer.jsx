@@ -315,6 +315,7 @@ const ReelPlayer = ({ reel, userDetails, isActive }) => {
                             postId={reel.$id}
                             title={reel.title}
                             content={reel.caption}
+                            isReel={true}
                         />
                     </div>
 
