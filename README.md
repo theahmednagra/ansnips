@@ -3,13 +3,13 @@
 A full-featured social media web application built with React and Appwrite.
 
 ## Features
-- Multi-image posts & reels
-- Real-time chat
-- Likes, comments, replies
-- Notifications
-- Authentication & profiles
-- Dark mode
-- AI assistant
+- Real-time chat system with read/unread receipts, image messages, and timestamps using Appwrite
+- Authentication & profiles with Google OAuth, password reset/change, and private post visibility
+- Interactive feed with multi-image posts, likes, comments, replies, saves, shares, and infinite scroll
+- Media handling using Cloudinary for images and videos
+- Reusable UI components with consistent layouts across all major pages
+- AI assistant with markdown support and code highlighting
+- Responsive design with smooth animations and dark/light mode
 
 ## Tech Stack
 - React
